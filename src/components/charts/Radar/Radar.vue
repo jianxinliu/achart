@@ -27,13 +27,6 @@
                     data: series
                 }
                 return option
-            },
-
-            dealLegend(option = {}) {
-                const names = option.series.data.map(v => v.name)
-                option.legend = {
-                    data: names
-                }
             }
         },
         mounted() {
@@ -47,11 +40,11 @@
             }
             if (this.hasSeries) {
                 this.dealSeries(option)
-                this.dealLegend(option)
             }
+            const theme = this.darkMode ? 'dark' : ''
             this.option = option
-            const echartInstance = echarts.init(document.getElementById(this.id))
-            echartInstance.setOption(this.option)
+            const echartInstance = echarts.init(document.getElementById(this.id), theme)
+            echartInstance.setOption(option)
         }
     }
 </script>

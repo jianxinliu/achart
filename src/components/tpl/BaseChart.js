@@ -5,8 +5,8 @@ const base = {
         return {
             ...config,
             baseOption: {
-                darkMode: this.darkMode,
-                tooltip: {}
+                tooltip: {},
+                legend: {}
             }
         }
     },
@@ -24,9 +24,6 @@ const base = {
     },
     methods: {},
     mounted() {
-        if (this.darkMode) {
-            this.panel.style.background = 'grey'
-        }
     }
 
 }
