@@ -2,6 +2,7 @@
   "name": "achart",
   "version": "0.1.0",
   "author": "jianxinliu",
+  "description": "a chart components and tools with vue.js",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

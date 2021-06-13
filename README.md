@@ -27,18 +27,19 @@ ddChart，DDChart, ddchart, FChart, fchart, achart  (echartBuilder， optionBuil
 ## 项目规划
 
 ### 一：缘起
-	数据可视化需求日渐增加，但纵观市面上的产品，要么配置繁琐，要么 API 巨多，对于非专业人士，要搞明白这些配置项和概念，是一个不小的挑战，我只是想把我的数据变成图表而已……
-	所以萌生，以约定大于配置为指导思想，以使用简单为目的开发一个工具，来降低一般场景下数据可视化的难度。
+数据可视化需求日渐增加，但纵观市面上的产品，要么配置繁琐，要么 API 巨多，对于非专业人士，要搞明白这些配置项和概念，是一个不小的挑战，我只是想把我的数据变成图表而已……
+
+所以萌生，以约定大于配置为指导思想，以使用简单为目的开发一个工具的想法，来降低一般场景下数据可视化的难度。
 
 ### 二：功能
 
-1. 常用类型支持： bar, line，scatter，pie…… 
+1. 常用类型支持： bar，line，scatter，pie…… 
 2. 提供工具便捷支持扩展其他类型 & 组合
 3. 附带数据处理工具、数学 & 统计学工具
 
 ### 三：使用例子
 
-#### 结合 Vue
+基础设定自定义：
 
 ```js
 import achart from 'achart';
@@ -51,7 +52,7 @@ achart.default = {
 
 
 
-##### Bar chart
+#### Bar chart
 
 ```vue
 // 使用 Vue 组件
@@ -81,7 +82,7 @@ achart.default = {
 
 
 
-##### Trend chart
+#### Trend chart
 
 ```vue
 // 使用 Vue 组件
@@ -110,7 +111,7 @@ achart.default = {
 
 ![image-20210610234546730](src/assets/samples/trendChart2.png)
 
-##### Pie chart
+#### Pie chart
 
 ```vue
 // 使用 Vue 组件：

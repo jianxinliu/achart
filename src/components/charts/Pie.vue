@@ -3,8 +3,11 @@
 </template>
 
 <script>
+    import BaseChart from "@/components/tpl/BaseChart";
+
     export default {
-        name: "Pie"
+        name: "Pie",
+        mixins: [BaseChart],
     }
 </script>
 
